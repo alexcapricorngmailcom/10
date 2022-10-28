@@ -6,7 +6,7 @@
     --background-secondary-color: #f7f8fa;
 
     --main-title-color: #3e434a;
-    --main-subtitle-color: #42474e;
+    --main-subtitle-color: #0b0d0f;
 }
 
 html {
@@ -383,4 +383,9 @@ input:checked + label {
 }
 
 /* footer */
+
+.footer {
+    background-color: var(--main-title-color);
+    
+}
 
