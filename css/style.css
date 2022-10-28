@@ -353,6 +353,7 @@ input:checked + label {
     padding: 5.3em 0;
     text-align: center;
     background-color: var(--accent-color) !important;
+    border-bottom: none !important;
 }
 
 .trial-title {
@@ -385,7 +386,65 @@ input:checked + label {
 /* footer */
 
 .footer {
+    padding-top: 3em;
+    font-size: 0.9em;
     background-color: var(--main-title-color);
-    
+    color: #a5abb2;
 }
+
+.footer-title {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5.6em;
+}
+
+.footer-list-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-list-title {
+    color: #d0d6dd;
+}
+
+.footer-list-title + .footer-list-link {
+    margin-top: 2em;
+}
+
+.footer-list-link + .footer-list-link {
+    margin-top: 1em;
+}
+
+.footer-list-link:hover,
+.footer-list-link:focus {
+    color: var(--accent-color);
+}
+
+.footer-list-text {
+    margin-top: 2em;
+    max-width: 19em;
+}
+
+.footer-copyright {
+    padding: 2.3em 0 2.6em 0;
+    border-top: 1px solid #51565d;
+}
+
+.footer-list-form {
+    margin-top: 1.4em;
+}
+
+.footer-list-form-input {
+    width: 200px;
+    height: 30px;
+    background-color: var(--main-color);
+}
+
+
+
 
