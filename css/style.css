@@ -440,11 +440,29 @@ input:checked + label {
 }
 
 .footer-list-form-input {
-    width: 200px;
-    height: 30px;
+    max-width: 200px;
     background-color: var(--main-color);
+    padding: 12px;
+    border-style: none;
+    border-radius: 6px;
 }
 
+.footer-list-form-input::placeholder {
+    color: #cbcbcb;
+}
 
+.footer-list-form-btn {
+    width: 100px;
+    padding: 12px 18px;
+    margin-left: 8px;
+    background-image: linear-gradient(#565c64, #4a4f57);
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    color: #bbc1c8;
+}
 
-
+.footer-list-form-btn:hover, 
+.footer-list-form-btn:focus {
+    background-image: linear-gradient(#4a4f57, #565c64);
+}
