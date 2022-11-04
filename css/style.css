@@ -43,11 +43,9 @@ section + section:nth-child(odd) {
     transition: 0.2s;
 }
 
-.btn:hover {
-    background-color: var(--accent-color);
-}
-
-.btn:focus {
+.btn:hover,
+.btn:focus,
+.btn:active {
     background-color: var(--accent-color);
 }
 
@@ -62,6 +60,7 @@ section + section:nth-child(odd) {
 }
 
 .nav {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -79,6 +78,14 @@ section + section:nth-child(odd) {
 .nav-list {
     display: flex;
     align-items: center;
+}
+
+.nav-list-toogler {
+    display: none;
+}
+
+.nav-list-mobile {
+    display: none;
 }
 
 .nav-list-item:focus {
