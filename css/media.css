@@ -1,4 +1,4 @@
-/* 1280 980 767 480 */
+/* 1280 980 767 640 480 320 */
 
 @media (max-width: 1280px) {
     .container {
@@ -24,9 +24,9 @@
     
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
     .container {
-        max-width: 480px;
+        max-width: 640px;
     }
 
     html {
@@ -36,6 +36,11 @@
     .hero {
         padding: 10em 0 7em 0;
         text-align: center;
+    }
+
+    .hero-title, 
+    .hero-text {
+        max-width: initial;
     }
     
     .hero-btn-list {
@@ -62,6 +67,9 @@
 
     .features-card {
         padding: 1.7em;
+        width: 100%;
+        max-width: 22.5em;
+        margin: 0 auto;
     }
 
     .testimonials {
@@ -124,4 +132,52 @@
         text-align: center;
     }
     
+}
+
+@media (max-width: 640px) {
+    .container {
+        max-width: 480px;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .promotion {
+        text-align: center;
+    }
+
+    .promotion-img {
+        display: none;
+    }
+
+    .features-list-col {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .container {
+        max-width: 320px;
+    }
+
+    .hero-btn-list {
+        flex-direction: column;
+    }
+
+    .hero-btn-list li + li {
+        margin-top: 0.7em;
+        margin-left: 0;
+    }
+
+    .testimonials-list-col:nth-child(2) {
+        display: none;
+    }
+
+    .footer-list {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
 }
