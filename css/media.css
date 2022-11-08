@@ -144,10 +144,6 @@
 
     .nav-list-mobile {
         display: block;
-        position: absolute;
-        top: 50%;
-        right: 0%;
-        transform: translate(0, -50%);
         font-size: 1.4em;
         font-weight: 700;
         cursor: pointer;
@@ -170,7 +166,7 @@
         flex-direction: column;
         justify-content: center;
         background-color: rgba(0, 0, 0, 0.9);
-        order: -2;
+        z-index: 2;
     }
 
     .nav-list > li {

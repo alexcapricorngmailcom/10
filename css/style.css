@@ -105,6 +105,8 @@ section + section:nth-child(odd) {
 .hero {
     padding: 14em 0 11em 0;
     background-color: #000000;
+    background-image: linear-gradient(to left, #000, rgba(255,255,255, .2), #000);
+    box-shadow: inset 0 150px 150px 0 #000;
 }
 
 .hero-title {
@@ -325,6 +327,11 @@ section + section:nth-child(odd) {
 
 .testimonials-card-name-accent {
     color: #3ba06f;
+}
+
+.testimonials-card-name-accent:hover,
+.testimonials-card-name-accent:focus {
+    color: var(--accent-color);
 }
 
 .testimonials-radio {
