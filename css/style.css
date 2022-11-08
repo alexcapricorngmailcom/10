@@ -283,6 +283,7 @@ section + section:nth-child(odd) {
     background-color: var(--main-color);
     color: #656b74;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    
 }
 
 .testimonials-card-text:before {
@@ -293,6 +294,7 @@ section + section:nth-child(odd) {
     border-style: solid;
     border-width: 0 0px 15px 15px;
     border-color: transparent transparent transparent var(--main-color);
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.1));
 }
 
 .testimonials-card-person {
@@ -376,9 +378,9 @@ input:checked + label {
 }
 
 .trial-btn {
-    display: inline-block;
-    min-width: 11.5em;
+    max-width: 11.5em;
     height: 3.3em;
+    margin: 0 auto;
     margin-top: 2em;
     font-size: 1.1em;
     border: 1px solid #ffffff;
